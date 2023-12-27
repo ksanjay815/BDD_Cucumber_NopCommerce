@@ -4,7 +4,7 @@ import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.Assert;
+
 
 import Pages.AddcustomerPage;
 import Pages.LoginPage;
@@ -14,6 +14,7 @@ import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import junit.framework.Assert;
 
 public class LoginSteps {
 	public static WebDriver driver;
@@ -131,7 +132,7 @@ public class LoginSteps {
 		addCust.setGender("Male");
 		addCust.setFirstName("sanjay");
 		addCust.setLastName("Kumar");
-		addCust.setDob("30/05/1995"); // Format: D/MM/YYY
+		addCust.setDob("05/30/1995"); // Format: D/MM/YYY
 		addCust.setCompanyName("busyQA");
 		addCust.setAdminContent("This is for testing.........");
 	}
